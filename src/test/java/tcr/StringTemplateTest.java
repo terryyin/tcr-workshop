@@ -3,6 +3,8 @@ package tcr;
 import org.junit.Test;
 
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 import static java.util.Collections.*;
 import static java.util.Collections.emptyList;
@@ -19,5 +21,15 @@ public class StringTemplateTest {
     public void noReplacement() {
         StringTemplate template = new StringTemplate("hello");
         assertEquals("hello", template.replace(emptyMap()));
+    }
+
+    @Test
+    public void replaceOne() {
+        StringTemplate template = new StringTemplate("hello $name");
+
+        Map<String, String> attributes = new HashMap<>();
+        attributes.put("name", "Eva");
+
+        assertEquals("hello Eva", template.replace(attributes));
     }
 }

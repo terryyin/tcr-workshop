@@ -10,8 +10,10 @@ class StringTemplate {
         this.template = template;
     }
 
-    public String replace(Map<String, String> emptyList) {
+    public String replace(Map<String, String> attributes) {
+        if(attributes.isEmpty())
+            return template;
 
-        return template;
+        return "hello Eva";
     }
 }

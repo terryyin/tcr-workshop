@@ -11,5 +11,6 @@ public class FizzBuzzTest {
         assertEquals( "2", FizzBuzz.say(2));
         assertEquals( "fizz", FizzBuzz.say(3));
         assertEquals( "fizz", FizzBuzz.say(6));
+        assertEquals( "buzz", FizzBuzz.say(5));
     }
 }

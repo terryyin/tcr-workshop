@@ -1,6 +1,7 @@
 package tcr;
 
 import java.util.List;
+import java.util.Map;
 
 class StringTemplate {
     private String template;
@@ -9,7 +10,7 @@ class StringTemplate {
         this.template = template;
     }
 
-    public String replace(List<String> emptyList) {
+    public String replace(Map<String, String> emptyList) {
 
         return template;
     }

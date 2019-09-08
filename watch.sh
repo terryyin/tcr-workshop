@@ -1,1 +1,1 @@
-fswatch -r src/main | (while read; do ./tcr.sh; done)
+fswatch -r src | (while read; do ./tcr.sh; done)

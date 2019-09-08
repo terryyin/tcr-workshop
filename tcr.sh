@@ -1,5 +1,5 @@
 revert() {
-    git checkout HEAD -- src && git reset HEAD src/ -- && git clean -fd && echo 'reverted'
+    git checkout HEAD -- src/main && git reset HEAD src/main -- && git clean -fd src/main && echo 'reverted'
 }
 
 commit() {

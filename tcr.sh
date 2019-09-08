@@ -1,1 +1,1 @@
-gradle test && git commit -am "working" || git reset --hard ./src
+gradle test && git commit -am "working" || (git checkout HEAD -- src && git reset HEAD src/ -- && git clean -fd)

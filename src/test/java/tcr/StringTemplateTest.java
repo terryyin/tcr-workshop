@@ -9,9 +9,14 @@ import static junit.framework.TestCase.assertEquals;
 
 public class StringTemplateTest {
     @Test
-    public void X() {
+    public void empty() {
         StringTemplate template = new StringTemplate("");
         assertEquals("", template.replace(emptyList()));
     }
 
+    @Test
+    public void noReplacement() {
+        StringTemplate template = new StringTemplate("hello");
+        assertEquals("hello", template.replace(emptyList()));
+    }
 }

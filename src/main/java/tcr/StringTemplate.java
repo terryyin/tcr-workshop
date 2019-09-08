@@ -9,7 +9,8 @@ class StringTemplate {
         this.template = template;
     }
 
-    public String replace(List<Object> emptyList) {
+    public String replace(List<String> emptyList) {
+
         return template;
     }
 }

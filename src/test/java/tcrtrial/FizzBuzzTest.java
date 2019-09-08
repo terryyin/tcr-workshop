@@ -9,5 +9,6 @@ public class FizzBuzzTest {
     public void X() {
         assertEquals( "1", FizzBuzz.say(1));
         assertEquals( "2", FizzBuzz.say(2));
+        assertEquals( "fizz", FizzBuzz.say(3));
     }
 }

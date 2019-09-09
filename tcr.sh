@@ -1,9 +1,14 @@
+test() {
+    gradle test
+}
+
 revert() {
-    git checkout HEAD -- src/main && git reset HEAD src/main -- && git clean -fd src/main && echo 'reverted'
+    DIR_TO_REVERT = "src/main"
+    git checkout HEAD -- $DIR_TO_REVERT && git reset HEAD $DIR_TO_REVERT -- && git clean -fd $DIR_TO_REVERT && echo 'reverted'
 }
 
 commit() {
     git commit -am "working" && echo 'committed'
 }
 
-gradle test && commit || revert
+test && commit || revert

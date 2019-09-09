@@ -28,7 +28,7 @@ public class StringTemplateTest {
         StringTemplate template = new StringTemplate("hello $name");
 
         Map<String, String> attributes = new HashMap<>();
-        attributes.put("name", "Ea");
+        attributes.put("name", "Eva");
 
         assertEquals("hello Eva", template.replace(attributes));
     }

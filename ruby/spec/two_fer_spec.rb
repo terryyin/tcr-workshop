@@ -3,6 +3,6 @@ require_relative '../lib/two_fer'
 
 describe 'Two Fer' do
   it 'sample' do
-    expect('hello').to eq 'hello'
+    expect(TwoFer.new.say).to eq 'hello'
   end
 end

@@ -25,7 +25,7 @@ public class StringTemplateTest {
 
     @Test
     public void replaceOne() {
-        StringTemplate template = new StringTemplate("hello $name");
+        StringTemplate template = new StringTemplate("h $name");
 
         Map<String, String> attributes = new HashMap<>();
         attributes.put("name", "Eva");

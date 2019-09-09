@@ -1,4 +1,4 @@
 class TwoFer
-    def say
+    def sa
     end
 end

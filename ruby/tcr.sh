@@ -8,7 +8,8 @@ revert() {
 }
 
 commit() {
-    git commit -am "working"
+    git add .
+    git commit -m "working"
 }
 
 test && commit || revert
